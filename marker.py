@@ -11,7 +11,7 @@ class Marker(object):
                  llm: str,
                  ckpt_dir: str,
                  tokenizer_path: str,
-                 temperature: float = 0.6,
+                 temperature: float = 1.0,
                  top_p: float = 0.9,
                  max_seq_len: int = 8192,
                  max_batch_size: int = 1,

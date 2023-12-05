@@ -46,8 +46,6 @@ def main(
             # a_id : answer_id, we only use answer 10 ~ 30
             if a_id <= 9:
                 continue
-            # if q_id < 4 or a_id < 22:
-            #     continue
             
             system_message = "You will receive a exam question along with the standard solutions. Additionally, you will be given a student's answers to these questions. Your task is to assess and grade the student's answers based on the standard solutions and marking scheme."
             prompt = f'''Questions:\n\n"{question}"\n\nStudent Answers:\n\n"{ans}"\n\nStandard Solutions:\n\n"{gt}"\n\nPlease note that the total marks allocated for this question is 5. Evaluate the student's answer step-by-step, comparing it to the standard solution. Offer a thorough justification for the grade you assign. Conclude your assessment by indicating the awarded score in the following format: SCORE: awarded_score/5.'''
